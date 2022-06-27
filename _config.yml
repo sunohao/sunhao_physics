@@ -2,3 +2,13 @@ theme: jekyll-theme-slate
 title : Welcome to Sun's page
 tagline: A fresh mind in the universe of the topologcal matters
 assets:
+
+
+#### Menu
+menu:
+  Home: /
+  People: /people
+  Publications: /publications
+  Tutorial: /tutorial
+  Contact: /contact
+  
