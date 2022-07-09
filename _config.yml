@@ -53,7 +53,8 @@ language: en    ## blog site languages: en, zh-CN, zh-TW, de
 
 #### Menu
 menu:
-  Home: /research
+  Home:
+  Research: /research
   Publication: /publications
   People: /people
   Blogs: /archives
