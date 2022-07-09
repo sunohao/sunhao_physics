@@ -102,8 +102,8 @@ share_to: true #enable share-to buttons if true
 #### Author information
 author:
   name: Sun Hao      ## e.g. 
-  intro_line1:  "Hello, I'm Sun Hao."    ## your introduction on the bottom of the page
-  intro_line2:  "This is my website, believe it!"  ## the 2nd line
+  intro_line1:      ## your introduction on the bottom of the page
+  intro_line2:    ## the 2nd line
   ##weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
   ##tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
   ##douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
