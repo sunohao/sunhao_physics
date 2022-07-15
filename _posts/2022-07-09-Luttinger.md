@@ -110,14 +110,14 @@ We can rearrange the Hamiltonian with only the Bose fields as:
 
 $$
 H_{charge}=v_c\int dx \left[K_c(\partial_x\phi_c(x))^2+\frac{1}{K_c}(\Pi_c(x))^2\right],\qquad
-v_c=\sqrt{t\left(t+\frac{U}{2\pi}\right)}, \qquad K_c=\sqrt{\frac{t+U/2\pi}{t}}.
+v_c=\sqrt{t\left(t+\frac{U}{2\pi}\right)}, \quad K_c=\sqrt{\frac{t+U/2\pi}{t}}.
 $$
 
 For the spin excitation part, we have: 
 
 $$
 H_{spin}=v_s\int dx \left[K_s(\partial_x\phi_s(x))^2+\frac{1}{K_s}(\Pi_s(x))^2\right], \qquad
-v_s=\sqrt{t\left(t-\frac{U}{2\pi}\right)}, \qquad K_s=\sqrt{\frac{t-U/2\pi}{t}}.
+v_s=\sqrt{t\left(t-\frac{U}{2\pi}\right)}, \quad K_s=\sqrt{\frac{t-U/2\pi}{t}}.
 $$
 
 One can see the spin and charge excitations have different velocities, which reveals that the two basic excited modes follow the different equations of motion.
