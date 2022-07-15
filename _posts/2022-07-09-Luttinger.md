@@ -117,3 +117,5 @@ H_{spin}=v_s\int dx \left[K_s(\partial_x\phi_s(x))^2+\frac{1}{K_s}(\Pi_s(x))^2\r
 v_s=\sqrt{t\left(t-\frac{U}{2\pi}\right)}, \qquad K_s=\sqrt{\frac{t-U/2\pi}{t}}.
 $$
 
+One can see the spin and charge excitations have different velocities, which reveals that the two basic excited modes follow the different equations of motion.
+
