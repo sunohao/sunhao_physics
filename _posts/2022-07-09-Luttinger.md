@@ -32,17 +32,17 @@ $$
 H_{U}=U\sum_{l}n_{l\uparrow}n_{l\downarrow},
 $$
 
-where $$n_{l\sigma}=c^{\dagger}_{l\sigma}c_{l\sigma}$$ is the electron number operator in site $$l$$, and $$U$$ is the interaction strength of on-site electrons. The so-called Hubbard model can be written as:
+where $$n_{l\sigma}=c^{\dagger}_{l\sigma}c_{l\sigma}$$ is the electron number operator in site $$l$$, and $$U$$ is the interaction strength between on-site electrons. The so-called Hubbard model can be written as:
 
 $$
 H=H_0+H_U
 =-t\sum_{l,l',\sigma}c^{\dagger}_{l\sigma}c_{l'\sigma}-\mu\sum_{l,\sigma}c^{\dagger}_{l\sigma}c_{l\sigma}+U\sum_{l}n_{l\uparrow}n_{l\downarrow}.
 $$
 
-The competition between $H_0$ and $H_U$ is the basic physics picture of the Hubbard model. We define the spin density and spin current density:
+The competition between $H_0$ and $H_U$ is the basic physics picture of the Hubbard model. The kinetic term delocalizes the electron, while the Hubbard term contributes the electron localization. We define the spin density and spin current density:
 
 $$
-j^s_0(x)=\sum_{\sigma}\sigma j_{0,\sigma}(x)=j_{0,\uparrow}(x)-j_{0,\downarrow}(x),\quad
+j^s_0(x)=\sum_{\sigma}\sigma j_{0,\sigma}(x)=j_{0,\uparrow}(x)-j_{0,\downarrow}(x),\qquad
 j^s_1(x)=\sum_{\sigma}\sigma j_{1,\sigma}(x)=j_{1,\uparrow}(x)-j_{1,\downarrow}(x).
 $$
 
@@ -55,7 +55,7 @@ $$
 Let's consider about the following commutation relations:
 
 $$
-[\rho_{R}(p),H_0]=2t p \rho_R(p),\quad
+[\rho_{R}(p),H_0]=2t p \rho_R(p),\qquad
 [\rho_{L}(p),H_0]=-2t p \rho_L(p),
 $$
 
@@ -65,7 +65,7 @@ $$
 \tilde{H}_0=4\pi t \sum_{p>0,\sigma}(\rho_{R,\sigma}(-p)\rho_{R,\sigma}(p)+\rho_{L,\sigma}(p)\rho_{L,\sigma}(-p)),
 $$
 
-so that the commutation relations in (\ref{eq:47}) are maintained. And this equals:
+so that the commutation relations can be retained. And this equals:
 
 $$
 \tilde{H}_0=\frac{\pi t}{2} \int dx \left[ (j^c_0(x))^2+(j^c_1(x))^2+(j^s_0(x))^2+(j^s_1(x))^2 \right].
@@ -92,12 +92,7 @@ $$
 where
 
 $$
-H_{charge}=\int dx \left[\left(\frac{\pi t}{2}+\frac{U}{4}\right)(j^c_0(x))^2+\frac{\pi t}{2}(j^c_1(x))^2\right],
-$$
-
-and 
-
-$$
+H_{charge}=\int dx \left[\left(\frac{\pi t}{2}+\frac{U}{4}\right)(j^c_0(x))^2+\frac{\pi t}{2}(j^c_1(x))^2\right],\qquad
 H_{spin}=\int dx \left[\left(\frac{\pi t}{2}-\frac{U}{4}\right)(j^s_0(x))^2+\frac{\pi t}{2}(j^s_1(x))^2\right].
 $$
 
@@ -111,24 +106,14 @@ $$
 We can rearrange the Hamiltonian with only the Bose fields as:
 
 $$
-H_{charge}=v_c\int dx \left[K_c(\partial_x\phi_c(x))^2+\frac{1}{K_c}(\Pi_c(x))^2\right],
-$$
-
-where the velocity $v_c$ and the stiffness $K_c$ are:
-
-$$
+H_{charge}=v_c\int dx \left[K_c(\partial_x\phi_c(x))^2+\frac{1}{K_c}(\Pi_c(x))^2\right],\qquad
 v_c=\sqrt{t\left(t+\frac{U}{2\pi}\right)}, \qquad K_c=\sqrt{\frac{t+U/2\pi}{t}}.
 $$
 
 For the spin part, we have: 
 
 $$
-H_{spin}=v_s\int dx \left[K_s(\partial_x\phi_s(x))^2+\frac{1}{K_s}(\Pi_s(x))^2\right],
-$$
-
-where the velocity $v_s$ and the stiffness $K_s$ are:
-
-$$
+H_{spin}=v_s\int dx \left[K_s(\partial_x\phi_s(x))^2+\frac{1}{K_s}(\Pi_s(x))^2\right], \qquad
 v_s=\sqrt{t\left(t-\frac{U}{2\pi}\right)}, \qquad K_s=\sqrt{\frac{t-U/2\pi}{t}}.
 $$
 
