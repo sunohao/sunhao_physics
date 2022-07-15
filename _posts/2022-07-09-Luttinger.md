@@ -32,14 +32,14 @@ $$
 H_{U}=U\sum_{l}n_{l\uparrow}n_{l\downarrow},
 $$
 
-where $n_{l\sigma}=c^{\dagger}_{l\sigma}c_{l\sigma}$ is the electron number operator in site $l$, and $U$ is the interaction strength of on-site electrons. The so-called Hubbard model can be written as:
+where $$n_{l\sigma}=c^{\dagger}_{l\sigma}c_{l\sigma}$$ is the electron number operator in site $$l$$, and $$U$$ is the interaction strength of on-site electrons. The so-called Hubbard model can be written as:
 
 $$
 H=H_0+H_U
 =-t\sum_{l,l',\sigma}c^{\dagger}_{l\sigma}c_{l'\sigma}-\mu\sum_{l,\sigma}c^{\dagger}_{l\sigma}c_{l\sigma}+U\sum_{l}n_{l\uparrow}n_{l\downarrow}.
 $$
 
-The competition between $H_0$ and $H_U$ is the basic physics picture of the Hubbard model. Similar to Eqs.~(\ref{eq:10}), we define the spin density and spin current density:
+The competition between $H_0$ and $H_U$ is the basic physics picture of the Hubbard model. We define the spin density and spin current density:
 
 $$
 j^s_0(x)=\sum_{\sigma}\sigma j_{0,\sigma}(x)=j_{0,\uparrow}(x)-j_{0,\downarrow}(x),\quad
@@ -83,7 +83,7 @@ $$
 H_U=\frac{U}{4}\int dx \left[(j^c_0(x))^2-(j^s_0(x))^2\right].
 $$
 
-Using the Eqs.~(\ref{eq:49}) and (\ref{eq:51}), So the total Hubbard Hamiltonian can be written as: 
+Thus, we can rewrite the interacting Hamiltonian as: 
 
 $$
 H=H_{charge}+H_{spin},
@@ -108,7 +108,7 @@ j^s_0(x)=\sqrt{\frac{2}{\pi}}\partial_x \phi_s(x), \qquad
 j^s_1(x)=-\sqrt{\frac{2}{\pi}}\Pi_s(x).
 $$
 
-We can rearrange Eqs.~(\ref{eq:53}) and (\ref{eq:54}) with Bose fields as:
+We can rearrange the Hamiltonian with only the Bose fields as:
 
 $$
 H_{charge}=v_c\int dx \left[K_c(\partial_x\phi_c(x))^2+\frac{1}{K_c}(\Pi_c(x))^2\right],
@@ -132,95 +132,3 @@ $$
 v_s=\sqrt{t\left(t-\frac{U}{2\pi}\right)}, \qquad K_s=\sqrt{\frac{t-U/2\pi}{t}}.
 $$
 
-In this chapter, I will intruduce the density matrix renormalization group approach in 
-strongly-correlated quantum magnetic system, using **XXX-Heisenberg** model as an explicit example.
-
-<!--more-->
-
-<img class="centered" src="https://www.mathjax.org/badge/mj-logo.svg" />
-
-### Heisenberg model
-
-The Heisenberg model is given by:
-
-$$ H=\sum_{ij\alpha}J_{\alpha}\sigma^{\alpha}_i\sigma^{\alpha}_j $$
-
-
-### How to implement MathJax with Jekyll
-
-I followed the instructions described by Dason Kurkiewicz for
-[using Jekyll and Mathjax](http://dasonk.github.io/blog/2012/10/09/Using-Jekyll-and-Mathjax/).
-
-Here are some important details. I had to modify the Ruby library for Markdown in
-my ```_config.yml``` file. Now I'm using redcarpet so the corresponding line in the
-configuration file is: ```markdown: redcarpet```
-
-To load the MathJax javascript, I added the following lines in my layout ```page.html```
-(located in my folder ```_layouts```)
-
-{% highlight r %}
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-{% endhighlight %}
-
-Of course you can choose a different file location in your jekyll layouts.
-
-
-### A Couple of Examples
-
-Here's a short list of examples. To know more about the details behind MathJax, you can
-always checked the provided documentation available at
-[http://docs.mathjax.org/en/latest/](http://docs.mathjax.org/en/latest/)
-
-I'm assuming you are familiar with LaTeX. However, you should know that MathJax does not
-have the exactly same behavior as LaTeX. By default, the **tex2jax** preprocessor defines the
-LaTeX math delimiters, which are ```\\(...\\)``` for in-line math, and ```\\[...\\]``` for
-displayed equations. It also defines the TeX delimiters ```$$...$$``` for displayed
-equations, but it does not define ```$...$``` as in-line math delimiters. Fortunately,
-you can change these predefined specifications if you want to do so.
-
-Let's try a first example. Here's a dummy equation:
-
-$$a^2 + b^2 = c^2$$
-
-How do you write such expression? Very simple: using **double dollar** signs
-
-{% highlight r %}
-$$a^2 + b^2 = c^2$$
-{% endhighlight %}
-
-To display inline math use ```\\( ... \\)``` like this ```\\( sin(x^2) \\)``` which gets
-rendered as \\( sin(x^2) \\)
-
-
-Here's another example using type ```\mathsf```
-
-{% highlight r %}
-$$ \mathsf{Data = PCs} \times \mathsf{Loadings} $$
-{% endhighlight %}
-
-which gets displayed as
-
-$$ \mathsf{Data = PCs} \times \mathsf{Loadings} $$
-
-Or even better:
-
-{% highlight r %}
-\\[ \mathbf{X} = \mathbf{Z} \mathbf{P^\mathsf{T}} \\]
-{% endhighlight %}
-
-is displayed as
-
-\\[ \mathbf{X} = \mathbf{Z} \mathbf{P^\mathsf{T}} \\]
-
-If you want to use subscripts like this \\( \mathbf{X}\_{n,p} \\) you need to scape the
-underscores with a backslash like so ``` \mathbf{X}\_{n,p} ```:
-
-{% highlight r %}
-$$ \mathbf{X}\_{n,p} = \mathbf{A}\_{n,k} \mathbf{B}\_{k,p} $$
-{% endhighlight %}
-
-will be displayed as
-
-\\[ \mathbf{X}\_{n,p} = \mathbf{A}\_{n,k} \mathbf{B}\_{k,p} \\]
