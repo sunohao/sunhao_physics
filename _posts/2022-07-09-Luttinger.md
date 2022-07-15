@@ -9,7 +9,7 @@ image:
 
 ### Hubbard model
 
-In the 1D electron system, the striking feature is the charge-spin separation, which is the characteristic feature of non-Fermi liquids. Here we introduce a very important 1D lattice model with short-range repulsive force--Hubbard model, and discuss the charge-spin separation feature. With discrete lattice sites, the the 1D continuous Hamiltonian can be written as a tight-binding model:
+In the 1D electron system, the striking feature is the charge-spin separation, which is the characteristic feature of non-Fermi liquids. Here we introduce a very important 1D lattice model with short-range repulsive force -- Hubbard model, and discuss the charge-spin separation feature. With discrete lattice sites, the the 1D continuous Hamiltonian can be written as a tight-binding model:
 
 $$
 H_0=-\sum_{l,l',\sigma} t_{l,l'}c^{\dagger}_{l\sigma}c_{l'\sigma}-\mu\sum_{l,\sigma}c^{\dagger}_{l\sigma}c_{l\sigma}, 
@@ -113,7 +113,7 @@ H_{charge}=v_c\int dx \left[K_c(\partial_x\phi_c(x))^2+\frac{1}{K_c}(\Pi_c(x))^2
 v_c=\sqrt{t\left(t+\frac{U}{2\pi}\right)}, \qquad K_c=\sqrt{\frac{t+U/2\pi}{t}}.
 $$
 
-For the spin part, we have: 
+For the spin excitation part, we have: 
 
 $$
 H_{spin}=v_s\int dx \left[K_s(\partial_x\phi_s(x))^2+\frac{1}{K_s}(\Pi_s(x))^2\right], \qquad
