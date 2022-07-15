@@ -8,9 +8,7 @@ image:
 ---
 
 ### spin-charge seperation
-In the 1D electron system, the striking feature is the charge-spin separation, which is the characteristic feature of non-Fermi liquids. Here we introduce a very important 1D lattice model with short-range repulsive force--Hubbard model, and discuss the charge-spin separation feature. 
-
-With discrete lattice sites, the the 1D continuous Hamiltonian in Eq.~(\ref{eq:1}) can be written as a tight-binding model:
+In the 1D electron system, the striking feature is the charge-spin separation, which is the characteristic feature of non-Fermi liquids. Here we introduce a very important 1D lattice model with short-range repulsive force--Hubbard model, and discuss the charge-spin separation feature. With discrete lattice sites, the the 1D continuous Hamiltonian can be written as a tight-binding model:
 
 $$
 H_0=-\sum_{l,l',\sigma} t_{l,l'}c^{\dagger}_{l\sigma}c_{l'\sigma}-\mu\sum_{l,\sigma}c^{\dagger}_{l\sigma}c_{l\sigma}, 
@@ -25,7 +23,7 @@ $$
 where $a$ is the lattice constant of 1D model. The fundamental Hamiltonian describing the interaction electrons is: 
 
 $$
-H_{int}=\frac{1}{2}\sum_{\sigma,\sigma'}\int dxdx' \psi^{\dagger}_{\sigma}(x)\psi^{\dagger}_{\sigma'}(x')\frac{e^2}{\abs{x-x'}}\psi_{\sigma'}(x')\psi_{\sigma}(x).
+H_{int}=\frac{1}{2}\sum_{\sigma,\sigma'}\int dxdx' \psi^{\dagger}_{\sigma}(x)\psi^{\dagger}_{\sigma'}(x')\frac{e^2}{\lvert x-x' \rvert}\psi_{\sigma'}(x')\psi_{\sigma}(x).
 $$
 
 In the lattice system, we can simplify the above interacting Hamiltonian by only considering on-site Coulomb repulsion, we can have:
@@ -37,27 +35,28 @@ $$
 where $n_{l\sigma}=c^{\dagger}_{l\sigma}c_{l\sigma}$ is the electron number operator in site $l$, and $U$ is the interaction strength of on-site electrons. The so-called Hubbard model can be written as:
 
 $$
-H=&H_0+H_U\\
-=&-t\sum_{l,l',\sigma}c^{\dagger}_{l\sigma}c_{l'\sigma}-\mu\sum_{l,\sigma}c^{\dagger}_{l\sigma}c_{l\sigma}+U\sum_{l}n_{l\uparrow}n_{l\downarrow}.
+H=H_0+H_U
+=-t\sum_{l,l',\sigma}c^{\dagger}_{l\sigma}c_{l'\sigma}-\mu\sum_{l,\sigma}c^{\dagger}_{l\sigma}c_{l\sigma}+U\sum_{l}n_{l\uparrow}n_{l\downarrow}.
 $$
 
 The competition between $H_0$ and $H_U$ is the basic physics picture of the Hubbard model. Similar to Eqs.~(\ref{eq:10}), we define the spin density and spin current density:
 
 $$
-j^s_0(x)=\sum_{\sigma}\sigma j_{0,\sigma}(x)=j_{0,\uparrow}(x)-j_{0,\downarrow}(x),\\
+j^s_0(x)=\sum_{\sigma}\sigma j_{0,\sigma}(x)=j_{0,\uparrow}(x)-j_{0,\downarrow}(x),\quad
 j^s_1(x)=\sum_{\sigma}\sigma j_{1,\sigma}(x)=j_{1,\uparrow}(x)-j_{1,\downarrow}(x).
 $$
 
-Using the Kac-Moody algebra in~(\ref{eq:16}), we obtain the commutation relation between $j^s_0(x)$ and $j^s_1(x)$: 
+Using the Kac-Moody algebra, we obtain the commutation relation between $j^s_0(x)$ and $j^s_1(x)$: 
 
 $$
 [j^s_0(x),j^s_1(x')]=-\frac{2i}{\pi}\partial_x \delta(x-x')
 $$
 
 Let's consider about the following commutation relations:
+
 $$
-[\rho_{R}(p),H_0]&=2t p \rho_R(p),\\
-[\rho_{L}(p),H_0]&=-2t p \rho_L(p),
+[\rho_{R}(p),H_0]=2t p \rho_R(p),\quad
+[\rho_{L}(p),H_0]=-2t p \rho_L(p),
 $$
 
 where $t$ is the hopping parameter. That means we can effectively write the $H_0$ as the form:
