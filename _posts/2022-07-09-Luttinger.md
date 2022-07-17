@@ -84,7 +84,7 @@ $$
 H_U=\frac{U}{4}\int dx \left[(j^c_0(x))^2-(j^s_0(x))^2\right].
 $$
 
-### spin-charge seperation
+### Spin-charge seperation
 
 Thus, we can rewrite the interacting Hamiltonian as: 
 
