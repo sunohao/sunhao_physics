@@ -41,11 +41,13 @@ H=H_0+H_U
 $$
 
 The competition between $H_0$ and $H_U$ is the basic physics picture of the Hubbard model. The kinetic term delocalizes the electron, while the Hubbard term contributes the electron localization. We define the spin density
+
 $$
 j^s_0(x)=\sum_{\sigma}\sigma j_{0,\sigma}(x)=j_{0,\uparrow}(x)-j_{0,\downarrow}(x),
 $$
 
 and the spin current density
+
 $$
 j^s_1(x)=\sum_{\sigma}\sigma j_{1,\sigma}(x)=j_{1,\uparrow}(x)-j_{1,\downarrow}(x).
 $$
@@ -95,13 +97,14 @@ $$
 H=H_{charge}+H_{spin},
 $$
 
-where
+where the Hamiltonian of charge excitation sector
 
 $$
 H_{charge}=\int dx \left[\left(\frac{\pi t}{2}+\frac{U}{4}\right)(j^c_0(x))^2+\frac{\pi t}{2}(j^c_1(x))^2\right],
 $$
 
 and
+
 $$
 H_{spin}=\int dx \left[\left(\frac{\pi t}{2}-\frac{U}{4}\right)(j^s_0(x))^2+\frac{\pi t}{2}(j^s_1(x))^2\right].
 $$
@@ -113,6 +116,7 @@ j^s_0(x)=\sqrt{\frac{2}{\pi}}\partial_x \phi_s(x),
 $$
 
 and
+
 $$
 j^s_1(x)=-\sqrt{\frac{2}{\pi}}\Pi_s(x).
 $$
@@ -123,13 +127,9 @@ $$
 H_{charge}=v_c\int dx \left[K_c(\partial_x\phi_c(x))^2+\frac{1}{K_c}(\Pi_c(x))^2\right],
 $$
 
-where
+where $$v_c=\sqrt{t\left(t+\frac{U}{2\pi}\right)}$$ is the velocity of charge excitation, and
 $$
-v_c=\sqrt{t\left(t+\frac{U}{2\pi}\right)}
-$$
-is the velocity of charge excitation, and
-$$
-\quad K_c=\sqrt{\frac{t+U/2\pi}{t}}.
+K_c=\sqrt{\frac{t+U/2\pi}{t}}
 $$
 is the stiffness.
 
