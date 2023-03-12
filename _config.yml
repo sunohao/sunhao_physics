@@ -54,8 +54,8 @@ language: en    ## blog site languages: en, zh-CN, zh-TW, de
 #### Menu
 menu:
   Home:
-  People: /people
   Research: /research
+  People: /people 
   Publication: /publications
   Archives: /archives
   About: /about

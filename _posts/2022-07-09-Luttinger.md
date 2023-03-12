@@ -40,10 +40,15 @@ H=H_0+H_U
 =-t\sum_{l,l',\sigma}c^{\dagger}_{l\sigma}c_{l'\sigma}-\mu\sum_{l,\sigma}c^{\dagger}_{l\sigma}c_{l\sigma}+U\sum_{l}n_{l\uparrow}n_{l\downarrow}.
 $$
 
-The competition between $H_0$ and $H_U$ is the basic physics picture of the Hubbard model. The kinetic term delocalizes the electron, while the Hubbard term contributes the electron localization. We define the spin density and spin current density:
+The competition between $H_0$ and $H_U$ is the basic physics picture of the Hubbard model. The kinetic term delocalizes the electron, while the Hubbard term contributes the electron localization. We define the spin density
 
 $$
-j^s_0(x)=\sum_{\sigma}\sigma j_{0,\sigma}(x)=j_{0,\uparrow}(x)-j_{0,\downarrow}(x),\qquad
+j^s_0(x)=\sum_{\sigma}\sigma j_{0,\sigma}(x)=j_{0,\uparrow}(x)-j_{0,\downarrow}(x),
+$$
+
+and the spin current density
+
+$$
 j^s_1(x)=\sum_{\sigma}\sigma j_{1,\sigma}(x)=j_{1,\uparrow}(x)-j_{1,\downarrow}(x).
 $$
 
@@ -92,33 +97,49 @@ $$
 H=H_{charge}+H_{spin},
 $$
 
-where
+where the Hamiltonian of charge excitation sector
 
 $$
-H_{charge}=\int dx \left[\left(\frac{\pi t}{2}+\frac{U}{4}\right)(j^c_0(x))^2+\frac{\pi t}{2}(j^c_1(x))^2\right],\qquad
+H_{charge}=\int dx \left[\left(\frac{\pi t}{2}+\frac{U}{4}\right)(j^c_0(x))^2+\frac{\pi t}{2}(j^c_1(x))^2\right],
+$$
+
+and
+
+$$
 H_{spin}=\int dx \left[\left(\frac{\pi t}{2}-\frac{U}{4}\right)(j^s_0(x))^2+\frac{\pi t}{2}(j^s_1(x))^2\right].
 $$
 
-Similarly, we introduce the auxiliary Bose field for spin part, which has the relations:
+Similarly, we introduce the auxiliary Bose field for spin sector, which has the relations:
 
 $$
-j^s_0(x)=\sqrt{\frac{2}{\pi}}\partial_x \phi_s(x), \qquad
+j^s_0(x)=\sqrt{\frac{2}{\pi}}\partial_x \phi_s(x),
+$$
+
+and
+
+$$
 j^s_1(x)=-\sqrt{\frac{2}{\pi}}\Pi_s(x).
 $$
 
 We can rearrange the Hamiltonian with only the Bose fields as:
 
 $$
-H_{charge}=v_c\int dx \left[K_c(\partial_x\phi_c(x))^2+\frac{1}{K_c}(\Pi_c(x))^2\right],\qquad
-v_c=\sqrt{t\left(t+\frac{U}{2\pi}\right)}, \quad K_c=\sqrt{\frac{t+U/2\pi}{t}}.
+H_{charge}=v_c\int dx \left[K_c(\partial_x\phi_c(x))^2+\frac{1}{K_c}(\Pi_c(x))^2\right],
 $$
+
+where $$v_c=\sqrt{t\left(t+\frac{U}{2\pi}\right)}$$ is the velocity of charge excitation, and
+$$
+K_c=\sqrt{\frac{t+U/2\pi}{t}}
+$$
+is the stiffness.
 
 For the spin excitation part, we have: 
 
 $$
-H_{spin}=v_s\int dx \left[K_s(\partial_x\phi_s(x))^2+\frac{1}{K_s}(\Pi_s(x))^2\right], \qquad
-v_s=\sqrt{t\left(t-\frac{U}{2\pi}\right)}, \quad K_s=\sqrt{\frac{t-U/2\pi}{t}}.
-$$
+H_{spin}=v_s\int dx \left[K_s(\partial_x\phi_s(x))^2+\frac{1}{K_s}(\Pi_s(x))^2\right],$$
+
+with
+$$v_s=\sqrt{t\left(t-\frac{U}{2\pi}\right)}$$, and $$ K_s=\sqrt{\frac{t-U/2\pi}{t}}$$.
 
 One can see the spin and charge excitations have different velocities, which reveals that the two basic excited modes follow the different equations of motion.
 
