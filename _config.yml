@@ -43,7 +43,7 @@ paginate: 20
 
 #### Site
 title : Welcome to Sun's pages
-tagline: Theoretical Condensed Matter Physics
+tagline: Push Myself on the Pilgrimage to Theoretical Physics
 assets: /assets
 url:
 baseurl:
@@ -155,7 +155,7 @@ cnzz_tongji:
   siteid:    ## e.g. 1253575964 your cnzz tongji site id
 
 #### Miscellaneous
-fancybox: true        ## if you use gallery post or want use fancybox please set the value to true.
+fancybox: false        ## if you use gallery post or want use fancybox please set the value to true.
 totop: true           ## if you want to scroll to top in every post set the value to true
 
 #### Custom Search
