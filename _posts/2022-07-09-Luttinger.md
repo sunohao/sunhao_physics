@@ -2,7 +2,7 @@
 layout: post
 title: "Luttinger liquid theory of the quantum Hall edge (1)"
 date: 2022-07-09
-categories: opinion
+categories: non-Fermi liquid
 tags: [resources, jekyll]
 image:
 ---
